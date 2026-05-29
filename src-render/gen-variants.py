@@ -198,6 +198,16 @@ def generate_edge_cases(root):  # type: (str) -> None
         finally:
             ZipRaw.close()
 
+        # Test if `ic05` is 16@2x or 32@1x
+        #
+        # on non-retina: red if @2x, blue if @1x
+
+        content = [('ic04', Zip.read('solid-red-16.argb')),
+                   ('ic05', Zip.read('solid-blue-32.argb'))]
+        fn = os.path.join(base, '32-is-ic05-retina.icns')
+        write_icns(fn, content)
+        make_app_wrapper(fn)
+
         print(' done.')
     finally:
         Zip.close()

@@ -128,7 +128,7 @@ OSType | Size      | Data Type  | Supported OS | Notes
 `ic13` | 256×256   | PNG        | 10.7         | 128x128@2x "retina"
 `ic14` | 512×512   | PNG        | 10.7         | 256x256@2x "retina"
 `ic04` | 16×16     | ARGB       | 10.13        |
-`ic05` | 32×32     | ARGB       | 10.13        | 16x16@2x "retina"
+`ic05` | 32×32     | ARGB       | 10.13        |
 `icsb` | 18×18     | ARGB       | 10.7         |
 `icsB` | 36×36     | PNG        | 10.7         | 18x18@2x "retina"
 `sb24` | 24×24     | PNG        | 10.15        |

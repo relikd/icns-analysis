@@ -27,9 +27,11 @@ If you want to query a specific key, use the proper notation (e.g., `x'69636c38'
 - But apparently, Apple could render some ARGB fields back in 10.5 when placed in an `.app` bundle.
 - Uncompressed RGB / ARGB was never supported.
 - In macOS 10.14 and 10.15 the ARGB fields `ic04` and `ic05` can be "fixed" by including a transparency mask (`s8mk` and `l8mk` respectively).
-  This is wrong on a technical level.
-  For one, these transparency masks are reserved for the RGB fields `is32` and `il32`
-  — and ARGB already contains its own transparency mask.
+  Technically, the last field is ignored.
+  For the mentioned fix, the alpha mask is ignored (and ARGB already includes transparency).
+  This may be an issue for other cases though.
+  E.g. when adding both (`ic04` + `ic05`) the latter is ignored and not displayed in `icns`.
+- `ic05` is 32@1x, not 16@2x.
 - There is no `ic06` key. Tested all sizes on 10.12 and 15 (both, app and icns).
 - OS 9.2.2 (and earlier) has no support for `.icns` files.
   Neither is there a Preview app to view icns files, nor has is support for `.app` bundles.
