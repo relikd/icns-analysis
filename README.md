@@ -176,6 +176,9 @@ The second half is the alpha mask (0-bit: transparent, 1-bit: opaque).
 ### 4-bit an 8-bit icons
 The 4-bit an 8-bit icons use a fixed color palette with 16 colors and 256 colors, respectively.
 
+![4-bit color palette](results/4-bit_color_palette.png)
+![8-bit color palette](results/8-bit_color_palette.png)
+
 ### 8-bit mask
 Mask elements provide only the alpha channel data.
 The data is not compressed and uses one byte per pixel.
