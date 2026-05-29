@@ -108,18 +108,18 @@ The data type column shows the designated type for each icon (see [Compatibility
 
 OSType | Size      | Data Type  | Supported OS | Notes
 -------|-----------|------------|--------------|---------------
-`is32` | 16×16     | 24-bit RGB | 8.5          | 
+`is32` | 16×16     | 24-bit RGB | 8.5          |
 `s8mk` | 16×16     | 8-bit mask | 8.5          | fixed length: 256 bytes
-`il32` | 32×32     | 24-bit RGB | 8.5          | 
+`il32` | 32×32     | 24-bit RGB | 8.5          |
 `l8mk` | 32×32     | 8-bit mask | 8.5          | fixed length: 1024 bytes
-`ih32` | 48×48     | 24-bit RGB | 9.0          | 
+`ih32` | 48×48     | 24-bit RGB | 9.0          |
 `h8mk` | 48×48     | 8-bit mask | 9.0          | fixed length: 2304 bytes
 `it32` | 128×128   | 24-bit RGB | 9.0          | + 4-byte header¹
 `t8mk` | 128×128   | 8-bit mask | 9.0          | fixed length: 16384 bytes
-`icp4` | 16×16     | 24-bit RGB | 10.7         | 
-`icp5` | 32×32     | 24-bit RGB | 10.7         | 
+`icp4` | 16×16     | 24-bit RGB | 10.7         |
+`icp5` | 32×32     | 24-bit RGB | 10.7         |
 `icp6` | 48×48     |            | 10.7         | see [Compatibility](#compatibility)
-`ic07` | 128×128   | PNG        | 10.7         | 
+`ic07` | 128×128   | PNG        | 10.7         |
 `ic08` | 256×256   | JPF, PNG   | 10.5         | no PNG support in 10.5
 `ic09` | 512×512   | JPF, PNG   | 10.5         | no PNG support in 10.5
 `ic10` | 1024×1024 | PNG        | 10.7         | 512x512@2x "retina"
@@ -127,11 +127,11 @@ OSType | Size      | Data Type  | Supported OS | Notes
 `ic12` | 64×64     | PNG        | 10.7         | 32x32@2x "retina"
 `ic13` | 256×256   | PNG        | 10.7         | 128x128@2x "retina"
 `ic14` | 512×512   | PNG        | 10.7         | 256x256@2x "retina"
-`ic04` | 16×16     | ARGB       | 10.13        | 
+`ic04` | 16×16     | ARGB       | 10.13        |
 `ic05` | 32×32     | ARGB       | 10.13        | 16x16@2x "retina"
-`icsb` | 18×18     | ARGB       | 10.7         | 
+`icsb` | 18×18     | ARGB       | 10.7         |
 `icsB` | 36×36     | PNG        | 10.7         | 18x18@2x "retina"
-`sb24` | 24×24     | PNG        | 10.15        | 
+`sb24` | 24×24     | PNG        | 10.15        |
 `SB24` | 48×48     | PNG        | 10.15        | 24x24@2x "retina"
 
 ¹ it32 data always starts with a header of four zero-bytes (see [Image data formats](#image-data-formats)).
@@ -145,14 +145,14 @@ So, if you want to save the data to a file you have to re-create and prepend the
 
 OSType        | Supported OS  | Description
 --------------|---------------|-------------
-`tile`        | 10.0 – 10.7   | 
-`over`        | 10.3 – 10.6   | 
-`open`        | 10.3 – 10.6   | 
-`odrp`        | 10.3 – 10.6   | 
-`sbpp`        | 10.7 – 10.10  | 
+`tile`        | 10.0 – 10.7   |
+`over`        | 10.3 – 10.6   |
+`open`        | 10.3 – 10.6   |
+`odrp`        | 10.3 – 10.6   |
+`sbpp`        | 10.7 – 10.10  |
 `slct`        | 10.9          | "selected" icns file. Usage unknown.
 `sbtp`        | 10.10         | "template" icns file. Usage unknown.
-`FF DA 3A 5D` | 10.10 – 10.10 | 
+`FF DA 3A 5D` | 10.10 – 10.10 |
 `FD D9 2F A8` | 10.14         | "dark" icns file. Allows automatic icon switching in Dark mode.
 
 
